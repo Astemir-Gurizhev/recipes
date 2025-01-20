@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux'
-import { useActions } from '../hooks/useActions'
+import { useActions } from '../../hooks/useActions'
 import styles from './RecipeItem.module.css'
+import { useFavorites } from '../../hooks/useFavorites'
 
 const RecipeItem = ({ recipe }) => {
-	const { favorites } = useSelector(state => state)
+	const {favorites} = useFavorites()
 
 	const { toggleFavorites } = useActions()
 
