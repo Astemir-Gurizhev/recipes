@@ -1,6 +1,5 @@
 import RecipeItem from './recipe-item/RecipeItem'
 
-
 function App() {
 	return (
 		<div>
