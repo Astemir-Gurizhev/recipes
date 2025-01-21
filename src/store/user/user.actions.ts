@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
-const fetchUserById = userId => 
+const fetchUserById = userId =>
 	new Promise(resolve =>
 		setTimeout(
 			() =>
@@ -12,8 +12,14 @@ const fetchUserById = userId =>
 		)
 	)
 
-
-export const getUserById = createAsyncThunk('users/by-id', async(userId, thunkApi) => {
-	const response = await fetchUserById(userId)
-	return response
-})
+export const getUserById = createAsyncThunk(
+	'users/by-id',
+	async (userId, thunkApi) => {
+		try {
+			const response = await fetchUserById(userId)
+			return response
+		} catch (error) {
+			thunkApi.rejectWithValue({})
+		}
+	}
+)
