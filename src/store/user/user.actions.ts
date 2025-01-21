@@ -1,4 +1,6 @@
-const fetchUserById = userId => {
+import { createAsyncThunk } from '@reduxjs/toolkit'
+
+const fetchUserById = userId => 
 	new Promise(resolve =>
 		setTimeout(
 			() =>
@@ -9,6 +11,9 @@ const fetchUserById = userId => {
 			1000
 		)
 	)
-}
 
-export const getUserById = userId => {}
+
+export const getUserById = createAsyncThunk('users/by-id', async(userId, thunkApi) => {
+	const response = await fetchUserById(userId)
+	return response
+})
