@@ -4,7 +4,7 @@ import { userSlice } from './user/user.slice'
 
 const reducers = combineReducers({
 	favorites: favoritesReducer,
-	user: userSlice
+	user: userSlice.reducer
 })
 
 export const store = configureStore({
