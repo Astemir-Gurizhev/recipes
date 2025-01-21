@@ -1,8 +1,17 @@
 import Header from './components/header/Header'
 import RecipeItem from './components/recipe-item/RecipeItem'
 import User from './components/user/User'
+import { useGetRecipesQuery } from './store/api/api'
+
+
+
 
 function App() {
+
+	const {isLoading, data} = useGetRecipesQuery()
+	console.log(data);
+	
+
 	return (
 		<section>
 			<Header />
