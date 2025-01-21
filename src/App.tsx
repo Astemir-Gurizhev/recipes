@@ -1,43 +1,23 @@
 import Header from './components/header/Header'
 import RecipeItem from './components/recipe-item/RecipeItem'
-import User from './components/user/User'
 import { useGetRecipesQuery } from './store/api/api'
 
-
-
-
 function App() {
-
-	const {isLoading, data} = useGetRecipesQuery()
-	console.log(data);
-	
+	const { isLoading, data } = useGetRecipesQuery()
 
 	return (
 		<section>
 			<Header />
-			<User/>
+			{/* <User/> */}
 
 			<div>
-				<RecipeItem
-					recipe={{
-						id: 1,
-						name: 'Лазанья',
-					}}
-				/>
-
-				<RecipeItem
-					recipe={{
-						id: 2,
-						name: 'Каша',
-					}}
-				/>
-
-				<RecipeItem
-					recipe={{
-						id: 3,
-						name: 'Паста',
-					}}
-				/>
+				{isLoading ? (
+					<div>Loading...</div>
+				) : data ? (
+					data.map(recipe => <RecipeItem key={recipe.id} recipe={recipe} />)
+				) : (
+					<div> Not found </div>
+				)}
 			</div>
 		</section>
 	)
