@@ -5,11 +5,15 @@ export default function User() {
 
 	return (
 		<div>
-			{isLoading} ? <div>Loading...</div> : error ?{' '}
-			<div>
-				{error.message} : user ? <h1>User: {user.name}</h1> :{' '}
-				<h1>USER NOT FOUND</h1>{' '}
-			</div>
+			{isLoading ? (
+				<div>Loading...</div>
+			) : error ? (
+				<div>{error.message}) </div>
+			) : user ? (
+				<h1>User: {user.name}</h1>
+			) : (
+				<h1>USER NOT FOUND</h1>
+			)}
 		</div>
 	)
 }
