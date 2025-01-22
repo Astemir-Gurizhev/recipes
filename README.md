@@ -1,6 +1,6 @@
 https://redux-toolkit.js.org/introduction/getting-started
 
-<h1> Redux toolkit </h1>
+<h1> Данный проект создан в целях практики с технологией Redux Toolkit.  </h1>
 
 npm install @reduxjs/toolkit <br/>
 npm install react-redux <br/>
