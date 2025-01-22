@@ -3,4 +3,3 @@ import { RootState } from '../store/store'
 
 export const useTypedSelector:TypedUseSelectorHook<RootState> = useSelector
 
-useTypedSelector(state => state.favorites)
