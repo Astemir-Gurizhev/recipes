@@ -1,29 +1,24 @@
 {
-	"recipes": [
-		{
-			"id": "1",
-			"name": "Apple Frangipan Tart",
-			"image": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
-		},
-		{
-			"id": "2",
-			"name": "Apple & Blackberry Crumble",
-			"image": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
-		},
-		{
-			"id": "3",
-			"name": "Apam balik",
-			"image": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"
-		},
-		{
-			"id": "4",
-			"name": "Ayam Percik",
-			"image": "https://www.themealdb.com/images/media/meals/020z181619788503.jpg"
-		},
-		{
-			"id": "5",
-			"name": "New Recept Test",
-			"image": "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg"
-		}
-	]
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Apple Frangipan Tart",
+      "image": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Apple & Blackberry Crumble",
+      "image": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Apam balik",
+      "image": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ayam Percik",
+      "image": "https://www.themealdb.com/images/media/meals/020z181619788503.jpg"
+    }
+  ]
 }
