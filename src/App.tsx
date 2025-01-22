@@ -3,8 +3,14 @@ import Header from './components/header/Header'
 import RecipeItem from './components/recipe-item/RecipeItem'
 import { useGetRecipesQuery } from './store/api/api'
 
+const userId = 1
+
 function App() {
-	const { isLoading, data } = useGetRecipesQuery()
+	const { isLoading, data } = 
+	useGetRecipesQuery()
+	// 	undefined, {
+	// 	skip: !userId,
+	// })
 
 	return (
 		<section>

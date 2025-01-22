@@ -10,7 +10,7 @@ export const api = createApi({
 	}),
 	endpoints: builder => ({
 		getRecipes: builder.query({
-			query: () => '/',
+			query: () => '/?_sort=id&_order=desc',
 			providesTags: () => [
 				{
 					type: 'Recipe',

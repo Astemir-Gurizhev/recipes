@@ -19,6 +19,11 @@
 			"id": "4",
 			"name": "Ayam Percik",
 			"image": "https://www.themealdb.com/images/media/meals/020z181619788503.jpg"
+		},
+		{
+			"id": "5",
+			"name": "New Recept Test",
+			"image": "https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg"
 		}
 	]
 }
