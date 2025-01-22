@@ -11,3 +11,7 @@ export const recipeApi = api.injectEndpoints({
 		}),
 	}),
 })
+
+export const {useCreateRecipesMutation} = recipeApi
+
+// useMutation

@@ -18,12 +18,31 @@ button {
 	outline: none;
 	color: #fff;
 	padding: 4px 5px;
+	margin-top: 7px;
 	border-radius: 5px;
-	margin-top: 5px;
 	cursor: pointer;
 	transition: background-color 0.4s ease-in-out;
 }
 
 button:hover {
 	background-color: #c77683;
+}
+
+form {
+	padding: 0 10px;
+}
+
+input {
+	border: 1px solid transparent;
+	color: #222;
+	padding: 4px 5px;
+	border-radius: 5px;
+	margin-top: 7px;
+	transition: border-color 0.4s ease-in-out;
+	display: block;
+	outline: none;
+}
+
+input:focus {
+	border-color: #e08594;
 }

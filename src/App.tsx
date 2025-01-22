@@ -1,3 +1,4 @@
+import CreateRecipe from './components/create-recipe/CreateRecipe'
 import Header from './components/header/Header'
 import RecipeItem from './components/recipe-item/RecipeItem'
 import { useGetRecipesQuery } from './store/api/api'
@@ -9,7 +10,7 @@ function App() {
 		<section>
 			<Header />
 			{/* <User/> */}
-
+			<CreateRecipe/>
 			<div>
 				{isLoading ? (
 					<div>Loading...</div>

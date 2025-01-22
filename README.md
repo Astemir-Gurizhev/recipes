@@ -15,4 +15,5 @@ npm install react-redux <br/>
 +Включает интеграцию с React <br/>
 
 подключение json-server:  
+npm i -global json-server
 json-server db.json --port 4200 --watch
