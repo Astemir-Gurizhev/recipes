@@ -1,9 +1,9 @@
 import { useActions } from '../../hooks/useActions'
-import styles from './RecipeItem.module.css'
 import { useFavorites } from '../../hooks/useFavorites'
+import styles from './RecipeItem.module.css'
 
 const RecipeItem = ({ recipe }) => {
-	const {favorites} = useFavorites()
+	const { favorites } = useFavorites()
 
 	const { toggleFavorites } = useActions()
 

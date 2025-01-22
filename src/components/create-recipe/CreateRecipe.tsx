@@ -2,20 +2,18 @@ import { useState } from 'react'
 import { useCreateRecipesMutation } from '../../store/api/recipe.api'
 
 const CreateRecipe = () => {
-
 	const defaultValue = {
 		name: '',
 		image: '',
 	}
-	
 
 	const [recipe, setRecipe] = useState(defaultValue)
 
 	const [createRecipe] = useCreateRecipesMutation()
 
-	const handleSubmit = (e)  => {
+	const handleSubmit = e => {
 		e.preventDefault()
-		createRecipe(recipe).then(()=> {
+		createRecipe(recipe).then(() => {
 			setRecipe(defaultValue)
 		})
 	}

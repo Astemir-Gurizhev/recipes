@@ -11,6 +11,11 @@ export const api = createApi({
 	endpoints: builder => ({
 		getRecipes: builder.query({
 			query: () => '/',
+			providesTags: () => [
+				{
+					type: 'Recipe',
+				},
+			],
 		}),
 	}),
 })

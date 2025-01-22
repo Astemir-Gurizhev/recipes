@@ -10,7 +10,7 @@ function App() {
 		<section>
 			<Header />
 			{/* <User/> */}
-			<CreateRecipe/>
+			<CreateRecipe />
 			<div>
 				{isLoading ? (
 					<div>Loading...</div>

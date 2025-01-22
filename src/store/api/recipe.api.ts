@@ -8,10 +8,15 @@ export const recipeApi = api.injectEndpoints({
 				url: '/',
 				method: 'POST',
 			}),
+			invalidatesTags: () => [
+				{
+					type: 'Recipe',
+				},
+			],
 		}),
 	}),
 })
 
-export const {useCreateRecipesMutation} = recipeApi
+export const { useCreateRecipesMutation } = recipeApi
 
 // useMutation
