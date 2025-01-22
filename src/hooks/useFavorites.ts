@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux'
+import { useTypedSelector } from './useTypedSelector'
 
 export const useFavorites = () => {
-	const { favorites } = useSelector(state => state)
+	const { favorites } = useTypedSelector(state => state)
 	
 	return { favorites }
 }
