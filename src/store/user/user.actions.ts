@@ -7,7 +7,7 @@ const fetchUserById = (userId: number):Promise<IUser> =>
 			() =>
 				resolve({
 					id: 1,
-					name: 'Astemir',
+					name: `Astemir ${userId}`,
 				}),
 			1000
 		)
